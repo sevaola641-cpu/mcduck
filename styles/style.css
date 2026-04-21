@@ -125,7 +125,7 @@ body.page{
   position:absolute; inset:-6% -6% 0; z-index:0;
   background:
     radial-gradient(1200px 500px at 70% -10%, rgba(56,189,248,.35), transparent 60%),
-    url("images/valut.png") center/cover no-repeat;
+    url("/images/valut.png") center/cover no-repeat;
   filter:saturate(1.25) contrast(1.1) brightness(1.15);
   transform:translateZ(0);
 }
