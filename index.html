@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>$MCDUCK</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="/styles/reset.css" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body class="page">
+
+  <div class="solana-sky" id="solanaSky" aria-hidden="true"></div>
+
+  <header class="site-header page__header" id="siteHeader">
+    <div class="site-header__inner">
+      <div class="brand site-header__brand">
+        <div class="brand__logo" aria-hidden="true"><img src="/images/logo.PNG" alt="" class="brand__logo-img"></div>
+        <div class="brand__text">
+          <strong class="brand__name">Pepe $MCDUCK</strong>
+        </div>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="header-right" id="headerRight">
+        <nav class="nav site-header__nav" aria-label="Primary">
+          <a class="nav__link" href="#tokenomics">Tokenomics</a>
+          <a class="nav__link" href="#how-to-buy">How to Buy</a>
+          <a class="nav__link" href="#history">History</a>
+        </nav>
+
+        <div class="social">
+          <a class="social__link" href="https://t.me/McDuck_meme" target="_blank" rel="noopener">
+            <img src="/images/tglogo.png" alt="Telegram">
+          </a>
+          <a class="social__link" href="https://x.com/McDucksol_meme" target="_blank" rel="noopener">
+            <img src="/images/Xlogo.png" alt="X (Twitter)">
+          </a>
+          <a class="social__link" href="https://dexscreener.com/solana/coming soon" target="_blank" rel="noopener">
+            <img src="/images/dexlogo.png" alt="Dexscreener">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-v2 page__section" id="hero">
+    <div class="hero-v2__bg" aria-hidden="true"></div>
+    <div class="hero-v2__coins" id="heroCoins" aria-hidden="true"></div>
+    <div class="hero-v2__trail" id="heroTrail" aria-hidden="true"></div>
+    <div class="hero-v2__burst" id="heroBurst" aria-hidden="true"></div>
+    <img class="hero-v2__duck" id="duck" src="/images/duck.png" alt="Duck diving into SOL" width="560" height="560" />
+    <div class="hero-v2__inner">
+      <h2 class="hero-v2__title">Sail. Dive. Quack. With $MCDUCK.</h2>
+    </div>
+    <div class="ca">
+      <input
+        id="caField"
+        class="ca__field"
+        type="text"
+        value="coming soon"
+        readonly
+        aria-label="Contract address"
+      />
+      <button id="copyCA" class="ca__btn" type="button">Copy</button>
+    </div>
+
+    <img src="/images/money.png" alt="" class="hero-v2__money-img">
+  </section>
+
+  <section class="section section--zebra page__section" id="tokenomics">
+    <div class="section__inner">
+      <h3 class="section__title">Tokenomics</h3>
+      <div class="tokenomics tokenomics--capsule">
+        <article class="tokenomics__card">
+          <div class="tokenomics__head">
+            <span class="tokenomics__icon">🧮</span>
+            <h4 class="tokenomics__title">Total Supply</h4>
+          </div>
+          <p class="tokenomics__value">1,000,000,000 $MCDUCK</p>
+          <p class="tokenomics__note">Minted once. No hidden tricks.</p>
+        </article>
+
+        <article class="tokenomics__card">
+          <div class="tokenomics__head">
+            <span class="tokenomics__icon">💧</span>
+            <h4 class="tokenomics__title">Liquidity</h4>
+          </div>
+          <p class="tokenomics__value">100%</p>
+          <div class="meter" style="--val:100"></div>
+          <p class="tokenomics__note">Are locked.</p>
+        </article>
+
+        <article class="tokenomics__card">
+          <div class="tokenomics__head">
+            <span class="tokenomics__icon">👥</span>
+            <h4 class="tokenomics__title">Utility</h4>
+          </div>
+          <p class="tokenomics__value">No, just quack</p>
+        </article>
+
+        <article class="tokenomics__card">
+          <div class="tokenomics__head">
+            <span class="tokenomics__icon">🏦</span>
+            <h4 class="tokenomics__title">Tax and Fees</h4>
+          </div>
+          <p class="tokenomics__value">0%</p>
+          <div class="meter" style="--val:0"></div>
+          <p class="tokenomics__note">Feel free to trade as much as you like.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--zebra page__section howto-section" id="how-to-buy">
+    <div class="section__inner">
+      <h3 class="section__title">How to Buy</h3>
+      <ol class="howto howto--ducks section__list">
+        <li class="howto__duck" style="--duck:url('/images/duck-bg1.png')">
+          <div class="howto__content">
+            <h4 class="howto__title">Create Wallet</h4>
+            <p class="howto__text">Install Phantom Wallet app.</p>
+          </div>
+        </li>
+
+        <li class="howto__duck" style="--duck:url('/images/duck-bg2.png')">
+          <div class="howto__content">
+            <h4 class="howto__title">Get SOL</h4>
+            <p class="howto__text">Buy or deposit SOL.</p>
+          </div>
+        </li>
+
+        <li class="howto__duck" style="--duck:url('/images/duck-bg3.png')">
+          <div class="howto__content">
+            <h4 class="howto__title">Find Token</h4>
+            <p class="howto__text">Copy CA, search on DEX.</p>
+          </div>
+        </li>
+
+        <li class="howto__duck" style="--duck:url('/images/duck-bg4.png')">
+          <div class="howto__content">
+            <h4 class="howto__title">Swap for $MCDUCK</h4>
+            <p class="howto__text">Swap on PumpSwap, sign.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--zebra page__section" id="history">
+    <div class="section__inner">
+      <h3 class="section__title">History</h3>
+      <div class="history section__grid">
+        <figure class="history__item">
+          <div class="history__card">
+            <img src="images/history1.png" alt="History step 1" class="history__img">
+            <figcaption class="history__caption">The Beginning: Father gives the first coin, planting the dream.</figcaption>
+          </div>
+        </figure>
+        <figure class="history__item">
+          <div class="history__card">
+            <img src="images/history2.png" alt="History step 2" class="history__img">
+            <figcaption class="history__caption">Growth Together: Learning, community, and first victories with father by his side.</figcaption>
+          </div>
+        </figure>
+        <figure class="history__item">
+          <div class="history__card">
+            <img src="images/history3.png" alt="History step 3" class="history__img">
+            <figcaption class="history__caption">New Horizons: Proud father sees his son become a memecoin.</figcaption>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer page__footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__text">Built for fun. Not financial advice. Made with ❤️ for the meme-verse.</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
